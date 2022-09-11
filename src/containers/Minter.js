@@ -192,7 +192,7 @@ const Minter = () => {
                      <button className={styles.btnconnect} onClick={() => {connectWallet()}}>CONNECT WALLET</button>    
                      }
                      { walletconnected ? "" :
-                     <a href="https://opensea.io/collection/33-devs-punks" target="_blank"><img className={styles.opensea}src={images.op}></img></a>
+                     <a href="https://testnets.opensea.io/collection/unidentified-contract-hffmk8vrxr" target="_blank"><img className={styles.opensea}src={images.op}></img></a>
                      }
                   </div>
                   : 
@@ -252,62 +252,6 @@ const Minter = () => {
    </>
   )
 
-
-
-//   return (
-//     <>
-//       {/* <div className={styles.about1}>
-//          <span className={styles.purple}>MINT</span> OPEN
-//       </div> */}
-//       <div className={styles.bg}>
-//          <div className={styles.container}>
-//             <div className={styles.div1}>
-//                <div className={styles.imagect}>
-//                   <img  className={styles.image} src={images.nftart} alt=""/>
-//                </div>
-//                <div className={styles.supply}>
-//                   <span>HOLDERS: </span>
-//                   <span className={styles.asupply}>{totalSupply}</span>
-//                </div>
-//             </div>
-//             {
-//             !mintingmodal 
-//             ?
-//                <div className={styles.div2}>
-//                   <img src={images.pl} alt="" className={styles.polygon}></img>
-//                   {metamask ?
-//                      <div className={styles.btndiv} > 
-//                         { walletconnected ? "" :
-//                            <button className={styles.btnconnect} onClick={() => {connectWallet()}}>CONNECT WALLET</button>    
-//                         }
-//                         { walletconnected ? "" :
-//                            <a href="https://opensea.io/collection/33-devs-punks" target="_blank"><img className={styles.opensea}src={images.op}></img></a>
-//                         }
-//                      </div>
-//                   : <div className={styles.metamaskerror}>Metamask Extension Not Detected! For minting, please install it and refresh the page </div>}                           
-
-
-//                      {walletconnected ?  
-//                         <div className={styles.supply}>
-//                               <span>PRICE: </span>
-//                               <span className={styles.asupply}>{mintAmount * nftcosteth == 0 ? "FREE" : price }</span> {mintAmount * nftcosteth == 0 ? "to mint" : "MATIC" }
-//                         </div>
-//                      : "" }
-                  
-//                      {walletconnected ?    
-//                         <button className={styles.btnmint} onClick={()=>{mint()}}>MINT</button>
-//                      : "" } 
-//                </div>
-//              : 
-//                <div className={styles.modal}>
-//                   <div className={styles.spinner}> </div>
-//                   <span className={styles.supply}>TRANSACTION IN PROCESS</span>
-//                </div> 
-//             }
-//          </div>
-//       </div>
-//     </>
-//   )
 }
 
 export default Minter
