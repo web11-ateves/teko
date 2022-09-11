@@ -4,7 +4,7 @@ import { images } from '../assets';
 const styles ={
    container: `space-y-4 flex flex-col justify-center pt-[70px] pb-[70px]`,
    about1: `font-[minitel]  text-[20px] text-center px-[20px] leading-[50px] md:text-[30px]`,
-   rev: `font-[minitel] text-[25px] text-[#6e45c7] md:text-[30px]`,
+   rev: `font-[minitel] text-[25px] text-[#71be8a] md:text-[30px]`,
    about2: ` font-[minitel] text-[15px] text-center capitalize px-[40px] text-[#7c8591] `,
 }
 

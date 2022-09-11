@@ -22,7 +22,7 @@ module.exports = {
              }
           },
           animation: {
-              move: 'move 40s linear infinite',
+              move: 'move 20s linear infinite',
               wiggle: 'wiggle 1s ease-in-out',
               pulse2: 'pulse 0.4s ',
               scale: 'zoom 0.5s   '

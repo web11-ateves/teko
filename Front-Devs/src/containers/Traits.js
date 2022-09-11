@@ -9,7 +9,7 @@ const styles = {
    image: `max-w-[375px] md:max-w-[600px]`,
    imagecontainer: `flex justify-center`,
    description: `font-[minitel] text-center text-[#7c8591] px-[35px] `,
-   purple: `text-[#6e45c7]`,
+   purple: `text-[#71be8a]`,
    container3:`py-10 space-y-[50px]`
 }
 

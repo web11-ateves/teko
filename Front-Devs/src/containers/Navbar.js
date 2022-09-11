@@ -4,17 +4,18 @@ import { motion } from 'framer-motion';
 import { images } from '../assets';
 
 const styles = {
-   wrapper: `z-[1] shadow-sm fixed  px-8 h-[70px]  w-screen flex justify-between items-center bg-[#f2f5fa] text-black overflow:hidden `,
+   wrapper: `z-[1] shadow-sm fixed  px-8 h-[70px]  w-screen flex justify-between items-center bg-[#71be8a] text-black overflow:hidden `,
    logo: `flex w-1/8 items-center justify-start font-['pix'] text-[2rem] text-[#78818e]  `,
-   logospan: `text-[#6e45c7]`,
+   logospan: `text-[#71be8a]`,
    menu: `hidden md:flex block `,
-   menuitem: `px-4 py-2 m-1 flex items-center text-lg font-['pix'] text-[1.4rem] cursor-pointer rounded-3xl hover:text-[#6e45c7] text-[#78818e]`,
+   menuitem: `px-4 py-2 m-1 flex items-center text-lg font-['pix'] text-[1.2rem] cursor-pointer rounded-3xl hover:text-[#f5e6bd] text-[white]`,
    sidebaritems: `fixed text-center w-full h-full right-0 top-0  text-[2rem] bg-[#ffffff] font-['pix'] text-[#78818e]`,
-   sidebaritemhover: `hover:text-[#6e45c7]`,
+   sidebaritemhover: `hover:text-[#71be8a]`,
    sidebar: ` visible md:hidden flex  `,
    oplogo: `max-w-[35px] mr-[35px] `,
    oplogo2: `max-w-[35px] mr-[35px] hidden md:flex block  `,
-   menubutton: `hover:text-[#6e45c7]`,
+   menubutton: `hover:text-[#71be8a]`,
+   imagelogo: `w-[90px]`,
 }
 
 const Navbar = () => {
@@ -22,10 +23,10 @@ const Navbar = () => {
   return (
     <div className={styles.wrapper}>
        <div className={styles.logo}>
-            <span className={styles.logospan}>33</span>DEVS
+         <img className={styles.imagelogo} src={images.hl}/>
        </div>
        <ul className={styles.menu}>
-         {['ABOUT','TRAITS', 'ROADMAP', 'TEAM', 'FAQ' ].map((item)=> (
+         {['ABOUT','HOW IT WORKS', 'ROADMAP', 'MEMBER AREA', 'FAQ' ].map((item)=> (
             <li className={styles.menuitem} key={`link-${item}`}>
                <div />
                <a href={`#${item}`}>{item}</a>
@@ -46,7 +47,7 @@ const Navbar = () => {
                whileInView={{ x: [300, 0] }}
                transition={{ duration: 0.85, ease: 'easeOut' }}
                >
-                  <HiX size={35} color='#6e45c7' onClick={() => setToggle(false)} />       
+                  <HiX size={35} color='#71be8a' onClick={() => setToggle(false)} />       
                   {['ABOUT','TRAITS', 'ROADMAP', 'TEAM', 'FAQ'].map((item) => (
                   <li className={styles.sidebaritemhover} key={item}>
                      <a href={`#${item}`} onClick={() => setToggle(false)}>

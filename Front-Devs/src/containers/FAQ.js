@@ -5,7 +5,7 @@ const styles = {
    container: `space-y-4 py-[50px] flex flex-col justify-center bg-[#edf2f8]`,
    header: `font-[minitel] text-[25px] text-center px-[20px] leading-[50px] md:text-[30px]`,
    cardcontainer: `py-[25px] mx-auto md:max-w-[1800px] md:flex flex-row flex-wrap   max-w-screen justify-center `,
-   purple: `text-[#6e45c7]`,
+   purple: `text-[#71be8a]`,
    faqcontainer: `mx-auto flex flex-col flex-wrap md:flex-row md:justify-center  justify-start`,
 }
 

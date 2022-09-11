@@ -7,7 +7,7 @@ const styles = {
    container2: `space-y-4 flex flex-col md:flex-row justify-center bg-[#ffffff] pb-[70px]`,
    cardcontainer: `flex flex-col justify-center bg-[#ffffff] md:flex-row      `,
    header: `font-[minitel] text-[25px] text-center px-[20px] md:text-[30px]`,
-   purple: `text-[#6e45c7]`,
+   purple: `text-[#71be8a]`,
    socialiconscontainer:``,
 }
 

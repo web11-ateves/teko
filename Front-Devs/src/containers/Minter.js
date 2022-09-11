@@ -6,18 +6,19 @@ import { ethers } from 'ethers'
 import ABI from '../assets/TekoNFT.json'
 
 const styles = {
-   bg: `bg-[#ffffff] px-[18px] pt-[40px] flex justify-center`,
+   bg: `bg-[#ffffff] px-[18px] pt-[20px] flex justify-center`,
    about1: `font-[minitel]  text-[25px] text-center md:text-[30px] pt-[40px]`,
-   purple: `font-[minitel] text-[25px] text-[#6e45c7] md:text-[30px]`,
-   container: `px-3 py-3 flex flex-col sm:flex-row justify-center bg-[#f2f5fa] md:max-w-2xl shadow-lg  `,
+   purple: `font-[minitel] text-[25px] text-[#71be8a] md:text-[30px]`,
+   container: `px-3 py-3 flex flex-col sm:flex-row justify-center bg-[#feffe4] md:max-w-2xl shadow-lg  `,
    div1: ` p-2 sm:w-1/2 flex flex-col justify-center text-center space-y-2`,
    div2: ` p-2 sm:w-1/2 align-middle text-center flex flex-col justify-center space-y-2` ,
-   image: ` px-6 py-0 `,
-   supply: `font-[pix] text-lg bg-[#ffffff] mx-6`,
+   imagect: ` px-6 py-0`,
+   image: ` shadow-lg`,
+   supply: `font-[pix] text-lg bg-[#ffffff] mx-6 shadow-md`,
    metamaskerror: `font-[minitel] text-sm bg-[#ffffff] mx-6 capitalize p-1`,
-   btnconnect: `font-[pix] w-full animate-pulse text-lg bg-[#6e45c7] hover:bg-[#45c76e] text-white font-bold p-4  shadow-md`,
+   btnconnect: `font-[pix] w-full animate-pulse text-lg bg-[#71be8a] hover:bg-[#4f8560] text-white font-bold p-4  shadow-md`,
    amount: `font-[pix] text-lg`,
-   btnmint: `font-[pix] text-lg bg-[#6e45c7] hover:bg-[#45c76e] text-white font-bold py-4 px-6 shadow-md`,
+   btnmint: `font-[pix] text-lg bg-[#71be8a] hover:bg-[#45c76e] text-white font-bold py-4 px-6 shadow-md`,
    counterbtnp: `bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l`,
    counterbtnn: `bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r`,
    counter: `bg-gray-200 text-gray-800 font-bold py-3 px-4`,
@@ -25,7 +26,7 @@ const styles = {
    polygon: `max-w-[130px] mx-auto`,
    modal: `mx-auto`,
    spinner: `mx-auto mt-[100px] w-20 h-20 rounded-full animate-spin border-8 border-solid border-purple-500 border-t-transparent`,
-   opensea: `max-w-[260px] mx-auto pt-[20px]`,
+   opensea: `max-w-[260px] mx-auto pt-[20px] shadow-md`,
 }
 
 const address = "0x8DbA0BED459BB1C0b037CA638f22e224a00E7802"
@@ -114,14 +115,14 @@ const Minter = () => {
 
   return (
     <>
-      <div className={styles.about1}>
+      {/* <div className={styles.about1}>
          <span className={styles.purple}>MINT</span> OPEN
-      </div>
+      </div> */}
       <div className={styles.bg}>
          <div className={styles.container}>
             <div className={styles.div1}>
-               <div className={styles.image}>
-                  <img  src={images.phidden} alt=""/>
+               <div className={styles.imagect}>
+                  <img  className={styles.image} src={images.nftart} alt=""/>
                </div>
                <div className={styles.supply}>
                   <span>TOTAL MINTED: </span>
