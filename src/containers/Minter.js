@@ -192,7 +192,7 @@ const Minter = () => {
                      <button className={styles.btnconnect} onClick={() => {connectWallet()}}>CONNECT WALLET</button>    
                      }
                      { walletconnected ? "" :
-                     <a href="https://testnets.opensea.io/collection/unidentified-contract-hffmk8vrxr" target="_blank"><img className={styles.opensea}src={images.op}></img></a>
+                     <a href="https://testnets.opensea.io/collection/refugio-da-ilha-regen-partners" target="_blank"><img className={styles.opensea}src={images.op}></img></a>
                      }
                   </div>
                   : 

@@ -34,10 +34,10 @@ const Navbar = () => {
 
          ))}
       </ul>
-      <a href="https://testnets.opensea.io/collection/unidentified-contract-hffmk8vrxr"><img className={styles.oplogo2} src={images.oplogo}/></a>
+      <a href="https://testnets.opensea.io/collection/refugio-da-ilha-regen-partners"><img className={styles.oplogo2} src={images.oplogo}/></a>
       <div className={styles.sidebar}>
          <div className={styles.oplogo}>
-         <a href="https://testnets.opensea.io/collection/unidentified-contract-hffmk8vrxr"><img  src={images.oplogo}/></a>
+         <a href="https://testnets.opensea.io/collection/refugio-da-ilha-regen-partners"><img  src={images.oplogo}/></a>
       </div>      
       <HiMenuAlt4  className={styles.menubutton} size={35} onClick={() => setToggle(true)} />  
       {toggle && (      
