@@ -3,7 +3,7 @@ import { images } from '../assets';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { ethers } from 'ethers'
-import abi from '../assets/abi.json'
+import ABI from '../assets/TekoNFT.json'
 
 const styles = {
    bg: `bg-[#ffffff] px-[18px] pt-[40px] flex justify-center`,
@@ -28,9 +28,9 @@ const styles = {
    opensea: `max-w-[260px] mx-auto pt-[20px]`,
 }
 
-const address = "0xA58E6e03E6584DCcBDbd1Fbf09b8D38122af811a"
-const rpcurlprovider =  new ethers.providers.JsonRpcProvider(["https://polygon-rpc.com/"])
-const contract =  new ethers.Contract(address, abi, rpcurlprovider) 
+const address = "0x8DbA0BED459BB1C0b037CA638f22e224a00E7802"
+const rpcurlprovider =  new ethers.providers.JsonRpcProvider(["https://polygon-mumbai.g.alchemy.com/v2/pkqdvzeiqirYql1sNmUAA3IIe0AL9_0U"])
+const contract =  new ethers.Contract(address, ABI.abi, rpcurlprovider) 
 
 const Minter = () => {
    const [mintAmount, setmintAmount] = useState(1)
@@ -75,14 +75,14 @@ const Minter = () => {
       const chainIdbg = await window.ethereum.chainId
       console.log("chainIdbg",chainIdbg)
       console.log("metamaskprovider",metamaskprovider)
-      if (chainIdbg !== "0x89") {
+      if (chainIdbg !== "0x13881") {
          window.alert("MetaMask is connect to wrong network! To Mint, Please First Connect your MetaMask to Polygon Mainnet Network (ID:137) before minting")
       } else {
          const signer = await metamaskprovider.getSigner()  
          const signedcontract = await contract.connect(signer)
          const totalprice = nftcostwei * mintAmount
          const pay = {value: totalprice.toString() }
-         const minting = await signedcontract.mint(mintAmount, pay)
+         const minting = await signedcontract.mint(pay)
          setmintingmodal(true)
          await minting.wait()
          setmintingmodal(false)
@@ -90,16 +90,16 @@ const Minter = () => {
    }
 
    useEffect(() => {
-      const rpcurlprovider =  new ethers.providers.JsonRpcProvider("https://polygon-rpc.com/")
-      const contract =  new ethers.Contract(address, abi, rpcurlprovider) 
+      const rpcurlprovider =  new ethers.providers.JsonRpcProvider("https://polygon-mumbai.g.alchemy.com/v2/pkqdvzeiqirYql1sNmUAA3IIe0AL9_0U")
+      const contract =  new ethers.Contract(address, ABI.abi, rpcurlprovider) 
       async function loaddata(){
-         const nftcostbg = await contract.cost()
+         const nftcostbg = await contract.nftPrice()
          const nftcostwei =  await nftcostbg.toString()
          setnftcostwei (nftcostwei)
          const nftcostethx = await nftcostwei / 1000000000000000000
          const nftcosteth = await nftcostethx.toFixed(4)
          setnftcosteth (nftcosteth)
-         const totalSupplybn = await contract.totalSupply()
+         const totalSupplybn = await contract.totalMinted()
          const totalSupply = await totalSupplybn.toString()
          setTotalsupply (totalSupply)
       } 
@@ -124,8 +124,8 @@ const Minter = () => {
                   <img  src={images.phidden} alt=""/>
                </div>
                <div className={styles.supply}>
-                  <span>SUPPLY: </span>
-                  <span className={styles.asupply}>{totalSupply}</span>/10.000
+                  <span>TOTAL MINTED: </span>
+                  <span className={styles.asupply}>{totalSupply}</span>
                </div>
             </div>
             {
@@ -143,14 +143,7 @@ const Minter = () => {
                         }
                      </div>
                   : <div className={styles.metamaskerror}>Metamask Extension Not Detected! For minting, please install it and refresh the page </div>}                           
-                     {walletconnected ?                
-                        <div className={styles.amount}>
-                           <div>Amount:</div>
-                           <button className={styles.counterbtnp} onClick={() => {mintAmount > 1 ? setmintAmount(mintAmount-1): setmintAmount(mintAmount)}}>-</button>
-                           <span className={styles.counter}>{mintAmount}</span>
-                           <button className={styles.counterbtnn} onClick={() => {mintAmount < 5 ? setmintAmount(mintAmount+1): setmintAmount(mintAmount)}}>+</button>
-                        </div>  
-                     : "" }
+
 
                      {walletconnected ?  
                         <div className={styles.supply}>
