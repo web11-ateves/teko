@@ -4,6 +4,8 @@ import p3 from './p3.png';
 import p4 from './p4.png';
 import p5 from './p5.png';
 import p6 from './p6.png';
+import p7 from './p7.png';
+import p8 from './p8.png';
 import phidden from './phidden.png';
 import traitsgif from './traitsgif.gif';
 import t1 from './t (1).png';
@@ -61,11 +63,17 @@ import u2 from './u2.jpg';
 import u3 from './u3.jpg';
 import u5 from './u5.jpg';
 import u4 from './devpunk.png';
+import artesanato from './artesanato.png';
+import ticket from './ticket.png';
+import voucher from './voucher.jpg';
 
 
 
 export default {
    p1,
+   voucher,
+   ticket,
+   artesanato,
    u1,
    u2,
    u3,
@@ -78,6 +86,8 @@ export default {
    p4,
    p5,
    p6,
+   p7,
+   p8,
    phidden,
    traitsgif,
    t1,

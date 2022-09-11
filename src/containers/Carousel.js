@@ -9,7 +9,7 @@ const Carousel = () => {
       card: `px-2 `
    }
 
-var punks = [images.p1, images.p2, images.p3, images.p4, images.p5, images.p6]
+var punks = [images.p1, images.p2, images.p3, images.p4, images.p5, images.p6, images.p7, images.p8]
 
 return (
          <>
