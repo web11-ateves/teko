@@ -44,9 +44,9 @@ const stylesStore = {
 }
 
 const products = [
-   [{title:"Local craftsmanship", description:"Incentivize the local community by buying their local art", image: images.artesanato, cost: 100}],
-   [{title:"30% discount", description:"Get a discount coupon for your next stay, reedeeming it directly with the lodge", image: images.ticket, cost: 200}],
-   [{title:"Lottery", description:"Buy a ticket for a chance to win custom prizes offered by the lodge", image: images.voucher, cost: 300}],
+   [{title:"Local Art", description:"Incentivize the local community by buying their local art", image: images.artesanato, cost: 100}],
+   [{title:"Stay Discounts", description:"Convert your tokens into a discount for your next stay at Refugio", image: images.ticket, cost: 200}],
+   [{title:"Lottery", description:"Enter a lottery to represent the Regen Holders on a community monitoring trip to Refugio!", image: images.voucher, cost: 300}],
 ]
 
 
