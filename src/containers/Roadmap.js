@@ -10,10 +10,10 @@ const styles = {
 }
 
 const roadmapdata = [
-   [{title:"1. MINT PHASE", description:"Official Launch of the NFT on Polygon, Availiable to Mint", image: images.rm1}],
-   [{title:"2. COMMUNITY", description:"Official Launch of Discord Community for supportes of the project", image: images.rm2}],
-   [{title:"3. TREASURY", description:"Implementation of the TREASURY DAO to allocate the funds according to the community interests ", image: images.rm3}],
-   [{title:"4. DEVELOPMENT", description:"Development of the local infrastructure with the specific amount raised to the lodge by the selling phase of the project", image: images.rm4}],
+   [{title:"1. MINT PHASE", description:"Official Launch of the Refugio da Ilha NFT on Polygon, Availiable to Mint", image: images.rm1}],
+   [{title:"2. BENEFITS", description:"Members get immediate access to exclusive content, stream of ERC20 point-token and their redemption", image: images.rm2}],
+   [{title:"3. TREASURY", description:"Implementation of the TREASURY pseudo-DAO and governance for yearly allocations and validation", image: images.rm3}],
+   [{title:"4. DEVELOPMENT", description:"Deployment of funds to Refugio to improve conservation and client experience", image: images.rm4}],
 ]
 
 const Roadmap = () => {
