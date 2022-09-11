@@ -1,4 +1,4 @@
-import { Navbar, Carousel, Minter, About, Traits, Roadmap, Team, FAQ } from './containers';
+import { Navbar, Carousel, Minter, About, Roadmap, Team, FAQ } from './containers';
 
 
 export default function App() {
@@ -8,7 +8,6 @@ export default function App() {
        <Carousel/>
        <Minter />
        <About />
-       <Traits />
        <Roadmap />
        <Team />
        <FAQ />

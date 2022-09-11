@@ -56,11 +56,21 @@ import oplogo from './opensealogo.png';
 import pl from './polygon.png';
 import hl from './headerlogo.png';
 import nftart from './nftart.gif';
+import u1 from './u1.jpeg';
+import u2 from './u2.jpg';
+import u3 from './u3.jpg';
+import u5 from './u5.jpg';
+import u4 from './devpunk.png';
 
 
 
 export default {
    p1,
+   u1,
+   u2,
+   u3,
+   u4,
+   u5,
    nftart,
    hl,
    p2,

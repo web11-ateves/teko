@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import FAQCard from '../cards/FAQCard';
 
 const styles = {
-   container: `space-y-4 py-[50px] flex flex-col justify-center bg-[#edf2f8]`,
+   container: `space-y-4 py-[50px] flex flex-col justify-center bg-[#feffe4]`,
    header: `font-[minitel] text-[25px] text-center px-[20px] leading-[50px] md:text-[30px]`,
    cardcontainer: `py-[25px] mx-auto md:max-w-[1800px] md:flex flex-row flex-wrap   max-w-screen justify-center `,
    purple: `text-[#71be8a]`,
@@ -10,10 +10,10 @@ const styles = {
 }
 
 const faqdata = [
-   {questionid:'faq01',question:'what are the collection about?', answer:'The 33Devs represent all the devs and creators leading this web3 revolution.  bY Holding one you are allowed to enter the exclusive 33Devs community, meeting other creators and having access to development content and events'},
-   {questionid:'faq02', question:'how can i mint?', answer:'this is the official website, you can mint here until the supply is over, after that you can buy one directly from the opensea market'},
-   {questionid:'faq04', question:'what is the minting price?', answer:'Free for the first 100 minters, you will only pay the MATIC transaction fee'},
-   {questionid:'faq03', question:'what are the benefits of the community?', answer:'A exclusive Discord Server with other developers and 33Devs Holders, with excluvise content dedicated to advance our development skills to the moon, you also will be able to join our presential and online meetups, all around the world'},
+   {questionid:'faq01',question:'What are the benefits of being an nft holder?', answer:'We consider our NFT holders as our prime and most important early investors in the Teko  that we are building. That is why a lot of work and efforts have been put in order to ensure that they get as many benefits as we can. Helping sustainable tourism, entrepreneurship and the community'},
+   {questionid:'faq02', question:'How do I claim my rewards token?', answer:'This is the official website, you can mint your erc1155 nft'},
+   {questionid:'faq03', question:'How do I redeem this $ONCA for perks?', answer:'Just connect your wallet to this website, and after that you will have access to a list of the rewards you can claim based on your balance of $ONCA tokens'},
+   {questionid:'faq04', question:'Why investing in tourism sustainable?', answer:'Because you in this way you can incentivize the local economy and population'},
 ]
 
 const FAQ = () => {

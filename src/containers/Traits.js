@@ -8,7 +8,7 @@ const styles = {
    header: `font-[minitel]  text-[25px] text-center px-[20px] leading-[50px] md:text-[30px]`,
    image: `max-w-[375px] md:max-w-[600px]`,
    imagecontainer: `flex justify-center`,
-   description: `font-[minitel] text-center text-[#7c8591] px-[35px] `,
+   description: `font-[minitel] text-center text-[#7c8591] px-[35px] max-w-[830px] mx-auto `,
    purple: `text-[#71be8a]`,
    container3:`py-10 space-y-[50px]`
 }
@@ -26,14 +26,11 @@ const Traits = () => {
   return (
      <>
      <div className={styles.container1} ID="TRAITS" >
-         <div className={styles.header}>RARITY <span className={styles.purple}>TRAITS</span></div>
-
-         <div className={styles.imagecontainer}>
-            <img className={styles.image} src={images.traitsgif} alt=""></img>
-         </div>
-         <p className={styles.description}>All the developers are <span className={styles.purple}>random generated</span> at the moment you mint them.</p>
-         <p className={styles.description}>The punks have <span className={styles.purple}>35 total traits</span>, each one with a specific rarity and % of spawning.</p>
-         <p className={styles.description}>There are more than <span className={styles.purple}>20.000</span> possible random combinations
+         <div className={styles.header}>HOW IT <span className={styles.purple}>WORKS</span></div>
+          .
+         <p className={styles.description}> The purchase of your NFT goes to <span className={styles.purple}>finance specific expansion and improvement projects</span> at Refugio da Ilha. </p>
+         <p className={styles.description}>Community members earn $ONCA tokens that can be <span className={styles.purple}>redeemed for discounts</span> and a chance to win free trips to go see for yourself the work being done at the property.</p>
+         <p className={styles.description}>This way we combine entertainment and conservation, engagement and monitoring <span className={styles.purple}>enjoying the wonders of our natural world</span> while helping to protect it.
          </p>
      </div>
 

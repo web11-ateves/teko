@@ -7,7 +7,7 @@ const styles = {
    question: ` cursor-pointer bg-[#ffffff] flex flex-row justify-between mx-[20px] uppercase text-[13px] font-[minitel]`,
    icon: `mx-3 cursor-pointer `,
    hidden: `hidden h-[0px]`,
-   answerdiv: `p-3 py-3 bg-[#fef4f5] mx-4 text-[13px] text-[#79818d] md:w-[400px] uppercase font-[minitel]`,
+   answerdiv: `p-3 py-3 bg-[#71be8a] mx-4 text-[13px] text-[white] md:w-[400px] uppercase font-[minitel]`,
 }
 
 const FAQCard = ({question, setactivefaq, activefaq}) => {

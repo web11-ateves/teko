@@ -125,7 +125,7 @@ const Minter = () => {
                   <img  className={styles.image} src={images.nftart} alt=""/>
                </div>
                <div className={styles.supply}>
-                  <span>TOTAL MINTED: </span>
+                  <span>HOLDERS: </span>
                   <span className={styles.asupply}>{totalSupply}</span>
                </div>
             </div>
