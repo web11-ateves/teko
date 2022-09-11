@@ -35,7 +35,7 @@ const styles = {
 }
 
 const stylesStore = {
-   container: `space-y-4 pt-[70px] pb-[30px] flex flex-col justify-center bg-[#ffffff]   `,
+   container: `space-y-4 pt-[20px] pb-[30px] flex flex-col justify-center bg-[#ffffff]   `,
    container2: `space-y-4 flex flex-col md:flex-row justify-center bg-[#ffffff] pb-[70px]`,
    cardcontainer: `flex flex-col justify-center bg-[#ffffff] md:flex-row      `,
    header: `font-[minitel] text-[25px] text-center px-[20px] md:text-[30px]`,
@@ -192,7 +192,7 @@ const Minter = () => {
                      <button className={styles.btnconnect} onClick={() => {connectWallet()}}>CONNECT WALLET</button>    
                      }
                      { walletconnected ? "" :
-                     <a href="https://testnets.opensea.io/collection/unidentified-contract-hffmk8vrxr" target="_blank"><img className={styles.opensea}src={images.op}></img></a>
+                     <a href="https://testnets.opensea.io/collection/refugio-da-ilha-regen-partners" target="_blank"><img className={styles.opensea}src={images.op}></img></a>
                      }
                   </div>
                   : 
