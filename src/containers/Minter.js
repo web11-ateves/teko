@@ -168,6 +168,9 @@ const Minter = () => {
       return (
          <>
          <div className={styles.about1}>
+            <span className={styles.purple}>THIS IS A TEST WEBSITE
+         </div>
+         <div className={styles.about1}>
             <span className={styles.purple}>MINT</span> OPEN
          </div>
          <div className={styles.bg}>
