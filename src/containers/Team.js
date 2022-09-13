@@ -11,11 +11,10 @@ const styles = {
    socialiconscontainer:``,
 }
 
-const teamdata = [
+const teamdata = [   
+   [{title:"DAVI.ETH", description:"Former founder creating conditions for regenerative systems", image: images.u3, linkedin:"#team", twitter:'https://twitter.com/ImaginalGuy', github:'#team',}],
    [{title:"VICTOR COLLASANTA", description:"Web3 Developer working on making the project smart-contracts", image: images.u1, linkedin:"https://www.linkedin.com/in/victor-collasanta-a4b9a913b/", twitter:'https://twitter.com/0xKabutoDev', github:'https://github.com/collasanta',}],
    [{title:"ANDRE TEVES", description:"Developer that focus on building the project infrastructure", image: images.u2, linkedin:"#team", twitter:'#team', github:'#team',}],
-   [{title:"DAVI.ETH", description:"Former founder creating conditions for regenerative systems", image: images.u3, linkedin:"#team", twitter:'https://twitter.com/ImaginalGuy', github:'#team',}],
-   [{title:"RENAN SANTOS", description:"Data anaylist working to bring insights based on data to the project", image: images.u4, linkedin:"#team", twitter:'#team', github:'#team',}],
    [{title:"@ELECTRICEEL21", description:"NFT Specialist helping the project with markting strategies", image: images.u5, linkedin:"#team", twitter:'https://twitter.com/Electriceel21', github:'#team',}],
 ]
 
